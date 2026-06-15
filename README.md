@@ -52,7 +52,8 @@ sudo dnf install dotnet-sdk-8.0
 ```bash
 # Ubuntu / Debian
 sudo apt install dotnet-sdk-8.0
-
+```
+```bash
 # Arch / SteamOS
 sudo pacman -S dotnet-sdk
 ```
