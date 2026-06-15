@@ -42,23 +42,29 @@ O algoritmo usa **Expand-and-Merge**:
 
 ---
 
-### Linux (Fedora / Ubuntu / Arch / SteamOS)
+### Linux (x64)
 
-**Dependência:**
+**Download direto (sem instalar):**
+
+```bash
+# Baixe SatisfactoryBalancer-linux em Releases, depois:
+chmod +x SatisfactoryBalancer-linux
+./SatisfactoryBalancer-linux
+```
+
+**Instalar com atalho no menu GNOME** (requer .NET SDK 8 e git):
+
 ```bash
 # Fedora
 sudo dnf install dotnet-sdk-8.0
-```
-```bash
+
 # Ubuntu / Debian
 sudo apt install dotnet-sdk-8.0
-```
-```bash
+
 # Arch / SteamOS
 sudo pacman -S dotnet-sdk
 ```
 
-**Instalar (adiciona ao menu de apps do GNOME):**
 ```bash
 git clone https://github.com/Vascon11/satisfactory-balancer.git
 cd satisfactory-balancer
@@ -67,7 +73,7 @@ cd satisfactory-balancer
 
 ---
 
-### Executar sem instalar (qualquer OS)
+### Compilar e executar da fonte
 
 ```bash
 dotnet run --project SatisfactoryBalancer.Avalonia/SatisfactoryBalancer.Avalonia.csproj
