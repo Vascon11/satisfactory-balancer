@@ -28,8 +28,8 @@ O algoritmo usa **Expand-and-Merge**:
 
 | Plataforma | Arquivo |
 |---|---|
-| Windows 10 / 11 | [SatisfactoryBalancer.exe](https://github.com/Vascon11/satisfactory-balancer/releases/download/v1.2.0/SatisfactoryBalancer.exe) |
-| Linux (x64) | [SatisfactoryBalancer-linux](https://github.com/Vascon11/satisfactory-balancer/releases/download/v1.2.0/SatisfactoryBalancer-linux) |
+| Windows 10 / 11 | [SatisfactoryBalancer.exe](https://github.com/Vascon11/satisfactory-balancer/releases/download/v1.3.0/SatisfactoryBalancer.exe) |
+| Linux (x64) | [SatisfactoryBalancer-linux](https://github.com/Vascon11/satisfactory-balancer/releases/download/v1.3.0/SatisfactoryBalancer-linux) |
 
 ## Instalação
 
