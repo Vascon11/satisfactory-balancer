@@ -1,0 +1,16 @@
+# .NET build output
+bin/
+obj/
+*.user
+.vs/
+.vscode/
+
+# Outros projetos nesta pasta (não fazem parte deste repo)
+cadastro/
+CSharp/
+Lista_de_bandas_favoridas/
+Sistema de avalizção de bandas/
+SatisfactoryBalancer.UI/
+
+# Publicação local
+publish/

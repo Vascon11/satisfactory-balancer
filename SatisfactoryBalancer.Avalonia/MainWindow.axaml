@@ -1,0 +1,83 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:SatisfactoryBalancer.Avalonia.Controls"
+        x:Class="SatisfactoryBalancer.Avalonia.MainWindow"
+        Title="Satisfactory Belt Balancer"
+        Width="1100" Height="720"
+        Background="#0f172a">
+
+    <DockPanel Margin="10">
+
+        <Border DockPanel.Dock="Top"
+                Background="#1e293b" CornerRadius="10"
+                Padding="12,8" Margin="0,0,0,8">
+            <WrapPanel VerticalAlignment="Center" Orientation="Horizontal">
+
+                <TextBlock Text="&#9881; Belt Balancer"
+                           FontWeight="Bold" FontSize="14"
+                           Foreground="#f1f5f9"
+                           VerticalAlignment="Center"
+                           Margin="0,0,20,0"/>
+
+                <TextBlock Text="Entradas" Foreground="#94a3b8" FontSize="13"
+                           VerticalAlignment="Center" Margin="0,0,6,0"/>
+                <NumericUpDown x:Name="InputSpinner"
+                               Value="4" Minimum="1" Maximum="64"
+                               Width="130" Height="44" FontSize="20"
+                               Foreground="#f1f5f9" Background="#0f172a"
+                               BorderBrush="#334155"
+                               VerticalAlignment="Center" Margin="0,0,12,0"/>
+
+                <TextBlock Text="&#8594;" Foreground="#64748b" FontSize="18"
+                           VerticalAlignment="Center" Margin="0,0,12,0"/>
+
+                <TextBlock Text="Sa&#237;das" Foreground="#94a3b8" FontSize="13"
+                           VerticalAlignment="Center" Margin="0,0,6,0"/>
+                <NumericUpDown x:Name="OutputSpinner"
+                               Value="3" Minimum="1" Maximum="64"
+                               Width="130" Height="44" FontSize="20"
+                               Foreground="#f1f5f9" Background="#0f172a"
+                               BorderBrush="#334155"
+                               VerticalAlignment="Center" Margin="0,0,16,0"/>
+
+                <Button x:Name="GerarBtn" Content="Gerar"
+                        FontWeight="SemiBold" FontSize="14"
+                        Foreground="White" Background="#3b82f6"
+                        CornerRadius="8" Padding="18,8"
+                        VerticalAlignment="Center" Margin="0,0,20,0"
+                        Click="OnGerar"/>
+
+                <TextBlock x:Name="StatsText"
+                           Foreground="#94a3b8" FontSize="12"
+                           VerticalAlignment="Center"
+                           FontFamily="monospace"/>
+
+            </WrapPanel>
+        </Border>
+
+        <Border x:Name="ErrorBorder" DockPanel.Dock="Top"
+                Background="#450a0a" CornerRadius="8"
+                Padding="12,7" Margin="0,0,0,8"
+                IsVisible="False">
+            <TextBlock x:Name="ErrorText" Foreground="#fca5a5" FontSize="13"/>
+        </Border>
+
+        <Border DockPanel.Dock="Top"
+                Background="#1e293b" CornerRadius="8"
+                Padding="10,6" Margin="0,0,0,8">
+            <WrapPanel Orientation="Horizontal">
+                <TextBlock Text="&#9679; " Foreground="#22c55e" FontSize="13" VerticalAlignment="Center"/>
+                <TextBlock Text="Entrada  " Foreground="#94a3b8" FontSize="11" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                <TextBlock Text="&#9679; " Foreground="#3b82f6" FontSize="13" VerticalAlignment="Center"/>
+                <TextBlock Text="Splitter  " Foreground="#94a3b8" FontSize="11" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                <TextBlock Text="&#9679; " Foreground="#f97316" FontSize="13" VerticalAlignment="Center"/>
+                <TextBlock Text="Merger  " Foreground="#94a3b8" FontSize="11" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                <TextBlock Text="&#9679; " Foreground="#ef4444" FontSize="13" VerticalAlignment="Center"/>
+                <TextBlock Text="Sa&#237;da" Foreground="#94a3b8" FontSize="11" VerticalAlignment="Center"/>
+            </WrapPanel>
+        </Border>
+
+        <controls:BalancerCanvas x:Name="GraphCanvas"/>
+
+    </DockPanel>
+</Window>
