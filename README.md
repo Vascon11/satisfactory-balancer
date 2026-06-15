@@ -17,25 +17,42 @@ O algoritmo usa **Expand-and-Merge**:
 > Alguns pares (N, M) são impossíveis — por exemplo, 17→5 —  
 > quando LCM/N tem fatores primos diferentes de 2 e 3. O programa avisa.
 
-## Instalação (Fedora / Linux)
+## Instalação
 
-### Dependência
+### Linux (Fedora / GNOME)
 
+**Dependência:**
 ```bash
 sudo dnf install dotnet-sdk-8.0
 ```
 
-### Instalar
-
+**Instalar:**
 ```bash
 git clone https://github.com/Vascon11/satisfactory-balancer.git
 cd satisfactory-balancer
 ./install.sh
 ```
 
-Pronto. Procure por **"Satisfactory Balancer"** no menu de aplicativos do GNOME.
+Procure por **"Satisfactory Balancer"** no menu de aplicativos do GNOME.
 
-### Executar sem instalar
+---
+
+### Windows
+
+**Dependência:** [.NET SDK 8](https://dotnet.microsoft.com/download)
+
+**Instalar** (PowerShell como Administrador):
+```powershell
+git clone https://github.com/Vascon11/satisfactory-balancer.git
+cd satisfactory-balancer
+.\install.ps1
+```
+
+Procure por **"Satisfactory Balancer"** no Menu Iniciar.
+
+---
+
+### Executar sem instalar (qualquer OS)
 
 ```bash
 dotnet run --project SatisfactoryBalancer.Avalonia/SatisfactoryBalancer.Avalonia.csproj
