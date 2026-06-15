@@ -28,7 +28,7 @@ sudo dnf install dotnet-sdk-8.0
 ### Instalar
 
 ```bash
-git clone https://github.com/GabrielVascon/satisfactory-balancer.git
+git clone https://github.com/Vascon11/satisfactory-balancer.git
 cd satisfactory-balancer
 ./install.sh
 ```
