@@ -21,6 +21,7 @@ dotnet publish "$ScriptDir\SatisfactoryBalancer.Avalonia\SatisfactoryBalancer.Av
     -r win-x64 `
     --self-contained true `
     -p:PublishSingleFile=true `
+    -p:IncludeNativeLibrariesForSelfExtract=true `
     -o "$AppDir" `
     --nologo -v quiet
 
