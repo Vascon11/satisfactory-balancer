@@ -4,6 +4,11 @@ Gerador de redes de **splitters e mergers** para o jogo [Satisfactory](https://w
 
 Dado N entradas e M saídas, calcula automaticamente a topologia mínima de divisores e mescladores para distribuir o fluxo de forma perfeitamente igual entre todas as saídas.
 
+![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Fedora%20%7C%20Ubuntu%20%7C%20Arch-FCC624?logo=linux&logoColor=black)
+![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)
+![License MIT](https://img.shields.io/badge/license-MIT-green)
+
 ![screenshot](assets/screenshot.png)
 
 ## Como funciona
@@ -19,11 +24,33 @@ O algoritmo usa **Expand-and-Merge**:
 
 ## Instalação
 
-### Linux (Fedora / GNOME)
+### Windows 10 / 11
+
+**Dependência:** [.NET SDK 8](https://dotnet.microsoft.com/download)
+
+**Instalar** (PowerShell):
+```powershell
+git clone https://github.com/Vascon11/satisfactory-balancer.git
+cd satisfactory-balancer
+.\install.ps1
+```
+
+Procure por **"Satisfactory Balancer"** no Menu Iniciar.
+
+---
+
+### Linux (Fedora / Ubuntu / Arch)
 
 **Dependência:**
 ```bash
+# Fedora
 sudo dnf install dotnet-sdk-8.0
+
+# Ubuntu / Debian
+sudo apt install dotnet-sdk-8.0
+
+# Arch
+sudo pacman -S dotnet-sdk
 ```
 
 **Instalar:**
@@ -34,21 +61,6 @@ cd satisfactory-balancer
 ```
 
 Procure por **"Satisfactory Balancer"** no menu de aplicativos do GNOME.
-
----
-
-### Windows
-
-**Dependência:** [.NET SDK 8](https://dotnet.microsoft.com/download)
-
-**Instalar** (PowerShell como Administrador):
-```powershell
-git clone https://github.com/Vascon11/satisfactory-balancer.git
-cd satisfactory-balancer
-.\install.ps1
-```
-
-Procure por **"Satisfactory Balancer"** no Menu Iniciar.
 
 ---
 
