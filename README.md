@@ -45,10 +45,12 @@ Procure por **"Satisfactory Balancer"** no Menu Iniciar.
 ```bash
 # Fedora
 sudo dnf install dotnet-sdk-8.0
-
+```
+```bash
 # Ubuntu / Debian
 sudo apt install dotnet-sdk-8.0
-
+```
+```bash
 # Arch
 sudo pacman -S dotnet-sdk
 ```
