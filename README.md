@@ -5,7 +5,7 @@ Gerador de redes de **splitters e mergers** para o jogo [Satisfactory](https://w
 Dado N entradas e M saídas, calcula automaticamente a topologia mínima de divisores e mescladores para distribuir o fluxo de forma perfeitamente igual entre todas as saídas.
 
 ![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-Fedora%20%7C%20Ubuntu%20%7C%20Arch-FCC624?logo=linux&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-Fedora%20%7C%20Ubuntu%20%7C%20Arch%20%7C%20SteamOS-FCC624?logo=linux&logoColor=black)
 ![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)
 ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
@@ -22,24 +22,27 @@ O algoritmo usa **Expand-and-Merge**:
 > Alguns pares (N, M) são impossíveis — por exemplo, 17→5 —  
 > quando LCM/N tem fatores primos diferentes de 2 e 3. O programa avisa.
 
+## Download
+
+➡️ **[Baixar a última versão](https://github.com/Vascon11/satisfactory-balancer/releases/latest)**
+
+| Plataforma | Arquivo |
+|---|---|
+| Windows 10 / 11 | `SatisfactoryBalancer.exe` |
+| Linux (x64) | `SatisfactoryBalancer-linux` |
+
 ## Instalação
 
 ### Windows 10 / 11
 
-**Dependência:** [.NET SDK 8](https://dotnet.microsoft.com/download)
+1. Baixe o `SatisfactoryBalancer.exe` em [Releases](https://github.com/Vascon11/satisfactory-balancer/releases/latest)
+2. Dê dois cliques e execute — sem instalação, sem terminal
 
-**Instalar** (PowerShell):
-```powershell
-git clone https://github.com/Vascon11/satisfactory-balancer.git
-cd satisfactory-balancer
-.\install.ps1
-```
-
-Procure por **"Satisfactory Balancer"** no Menu Iniciar.
+> Se o Windows Defender bloquear: clique em **"Mais informações" → "Executar assim mesmo"**
 
 ---
 
-### Linux (Fedora / Ubuntu / Arch)
+### Linux (Fedora / Ubuntu / Arch / SteamOS)
 
 **Dependência:**
 ```bash
@@ -49,20 +52,17 @@ sudo dnf install dotnet-sdk-8.0
 ```bash
 # Ubuntu / Debian
 sudo apt install dotnet-sdk-8.0
-```
-```bash
-# Arch
+
+# Arch / SteamOS
 sudo pacman -S dotnet-sdk
 ```
 
-**Instalar:**
+**Instalar (adiciona ao menu de apps do GNOME):**
 ```bash
 git clone https://github.com/Vascon11/satisfactory-balancer.git
 cd satisfactory-balancer
 ./install.sh
 ```
-
-Procure por **"Satisfactory Balancer"** no menu de aplicativos do GNOME.
 
 ---
 
